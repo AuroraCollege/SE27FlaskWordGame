@@ -3,8 +3,10 @@ Tests for wordle.py
 Run with:  python -m pytest -v
 """
 
+# Imports the WordList class you created to run tests on
 from wordle import WordList
 
+# Instantiate the word_list object from the WordList() class
 word_list = WordList()
 
 
