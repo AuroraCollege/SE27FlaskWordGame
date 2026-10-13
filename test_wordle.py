@@ -4,7 +4,8 @@ Run with:  python -m pytest -v
 """
 
 from wordle import WordList
-word_list = WordList("words.txt")
+
+word_list = WordList()
 
 
 def test_load_words():
@@ -12,7 +13,7 @@ def test_load_words():
 
 
 def test_finds_real_word():
-    assert word_list.contains("CRANE") == True
+    assert word_list.contains("CRACK") == True
 
 
 def test_rejects_fake_word():
@@ -20,7 +21,7 @@ def test_rejects_fake_word():
 
 
 def test_ignores_case():
-    assert word_list.contains("crane") == True
+    assert word_list.contains("crack") == True
 
 
 def test_random_word_is_in_list():
